@@ -1,5 +1,5 @@
 # Print "Hello, World!"
-
+print("Hello, world!")
 # Create a variable holding your name. Then, print the value of the variable.
 
 # Use the input() function to make the computer ask you for your name. Then, make the computer greet you.
