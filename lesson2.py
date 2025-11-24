@@ -1,8 +1,20 @@
 # First, import the randint function from the random module
-
+from random import randint
 # Then, generate a random number between 1 and 10
-
+randomnum=randint(1,20)
 # Next, prompt the user for a number between 1 and 10
+firstnum=int(input("Guess a number between 1 and 20!"))
+if firstnum==randomnum:
+    print("Congratulations, you won!")
+while firstnum != randomnum:
+    usernum=int(input("Incorrect."))
+    if randomnum==usernum:
+        print("Congratulations, you won!")
+        break
+    elif randomnum<usernum:
+        print("Guess a lower number!")
+    elif randomnum>usernum:
+        print("Guess a higher number!")
 
 # After, compare the user's number with the random number
 
