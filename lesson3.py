@@ -1,8 +1,27 @@
 #1 Import the randint() function from the random module
-
+from random import randint
 #2 Create two variables: set the number of tokens to 5 and the number of rounds to 0
-
+tokens=5
+rounds=0
 #3 Create a while loop that runs so long as the user still has tokens (tokens > 0)
+while tokens>0:
+    print("You have "+str(tokens)+" tokens.")
+    tokens=tokens-1
+    rounds=rounds+1
+    num1=randint(1,10)
+    num2=randint(1,10)
+    num3=randint(1,10)
+    if num1==num2 and num3==num1:
+        tokens=tokens*2
+    elif num1==num2 or num2==num3 or num1==num3:
+        tokens=tokens+2
+    else:
+        tokens=tokens-2
+    keepgoing=input("Do you want to keep playing?")
+    if keepgoing=="no":
+        break
+print("You played "+str(rounds)+" rounds.")
+print("You ended with "+str(tokens)+" tokens.") 
 
 #4 INSIDE LOOP: Tell the user how many tokens they have
 
