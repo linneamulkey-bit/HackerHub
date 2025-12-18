@@ -15,3 +15,6 @@
 #8 INSIDE LOOP: Prompt the user if they want to spend another token to play another round; if so, use the continue statement; if not, use the break statement
 
 #9 Finally, tell the user how many rounds they played
+
+# Use this line of code to print the numbers like a slot machine:
+# print(f"| {num1} | {num2} | {num3} |")
