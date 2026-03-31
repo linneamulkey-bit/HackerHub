@@ -1,4 +1,5 @@
 todos=["homework"]
+to=[]
 
 options="""
 1. View todos
@@ -11,7 +12,8 @@ def display_options():
     print(options)
 
 def view_todos():
-    print(todos)
+    with open("todos.txt","w") as f:
+        print(to)
 
 def add_todo():
     new=input("What would you like to add?")
@@ -24,7 +26,7 @@ def remove_todo():
 def write_to_file():
     with open("todos.txt","w") as f:
         for todo in todos:
-            f.write(todo+"\n")
+            to.append(todo+"\n")
 
 while True:
     display_options()
